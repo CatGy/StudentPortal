@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+</head>
+
+<body>
+    <!-- 
+    ● A​ ​ logo​ ​ which​ ​ links​ ​ to​ ​ the​ ​ index.html​ ​ page
+    ● A​ ​ functioning​ ​ navigation​ ​ system,​ ​ 3​ ​ links​ ​ to​ ​ the​ ​ working​ ​ pages​ ​ and​ ​ 2​ ​ more​ ​ additional​ ​ linksthat​ ​ aren’t​ ​ active -->
+    <!-- This​ ​ page​ ​ will​ ​ include​ ​ information​ ​ 
+    about​ ​ the program,​ ​ reasons​ ​ to​ ​ choose​ ​ the​ ​ program,​ ​ sample​ ​ of​ ​ the​ ​ types​ ​ job​ ​ opportunities​ ​ upongraduation,​ ​ etc.​ ​ ​ ​ 
+    This​ ​ page​ ​ will​ ​ also​ ​ include​ ​ a​ ​ section​ ​ where​ ​ students​ ​ can​ ​ log-in​ ​ to​ ​ viewtheir​ student​ ​ recordsPage​ ​ requirements:
+    ● Minimum​ ​ 4​ ​ block​ ​ level​ ​ elements
+    ● Minimum​ ​ 3​ ​ inline​ ​ level​ ​ elements
+    ● 1​ ​ form​ ​ element​ ​ for​ ​ student​ ​ login
+    ● Minimum​ ​ 3​ ​ images
+    ● Appropriate​ ​ amount​ ​ of​ ​ text​ ​ content -->
+
+    
+    <a href="index.html"><img src="assets/images/CJLogo.jpg" alt="" width="64"></a>
+    <h1>Welcome to CJ College</h1>
+    <nav>
+        <ul>
+            <!-- The bullet points was hidden because the margin was set to 0 in the style.css file for every elements including li and ul tags. -->
+            <!-- I have change the right margin to 20 px so the could be shown -->
+            <li><a href="index.html">Home</a></li>
+            <!-- Adding an a tag with its href attribut gives the link style (underscore + blue color)-->
+            <li><a href="create-profile.html">Create profile</a></li>
+            <li><a href="view-performance.html">View my performance</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="program">
+        <h2>About this program</h2>
+        <p>If you are detail-oriented, have a creative mind and like to design, this program is for you. Our , Web Design and Development Certificate program  have you covered. This program will teach you practices on how to analyse, design, build and problem-solve websites/ applications issues. You will build sites and apps from the ground up using the most up-to-date techniques and fundamental technologies. You will also learn to tackle technical challenges by developing strong troubleshooting and problem solving skills. The solutions you create along your journey will be curated into a captivating portfolio website at the end of the program.</p>
+        <q cite="https://mediaarts.humber.ca/programs/web-design-and-development.html">From humber.ca</q>
+    </section>
+    <section class="reason_for_program">
+        <h2>Why should you choose this program?</h2>
+         <img src="assets/images/pic2.jpg" alt="" srcset="" width="450">
+         <q cite="https://www.pexels.com/photo/abstract-business-code-coder-270348/">Photo by Pixabay</q>
+        <h3>Skills you will develop</h3>
+        <ul>
+            <li>Master the latest specifications for HTML & CSS, including accessible content and design</li>
+            <li>Develop applications with JavaScript, including the latest in open-source frameworks and libraries for front-end applications</li>
+            <li>Data design considerations for front-end applications, including custom and open-source APIs, as well as exploring various database solutions</li>
+            <li>Designing and prototyping interactive interfaces using industry standard tools or applications</li>
+            <li>Graphic design in both bitmap and vector formats, for various mediums, including video editing</li>
+        </ul>
+        <q cite="https://mediaarts.humber.ca/programs/web-design-and-development.html">From humber.ca</q>
+    </section>
+    <section class="job_opportunities">
+        <h2>Job Opportunities</h2>
+        <!-- Photo by Ivan Samkov: https://www.pexels.com/photo/making-halloween-drawings-5428717/ -->
+        <img src="assets/images/pic1.jpg" alt="" width="450">
+        <q cite="https://www.pexels.com/photo/making-halloween-drawings-5428717/">Photo by Ivan Samkov</q>
+        <p>Job opportunities are "Web Designer, Multimedia Designer, Graphic Designer..."</p>
+        
+        <p>Students are prepared to apply for junior and intermediate-level positions within the web and interactive field. Depending on how you choose to specialize and market yourself, a diverse range of positions including front-end development, backend development, web design, UI/UX design and many others are within reach. Our alumni use their skills to gain employment in interactive agencies, development studios and as in-house web professionals in a large variety of companies throughout the Greater Toronto Area and abroad. Opportunities also include freelance work.</p>
+        <q cite="https://mediaarts.humber.ca/programs/web-design-and-development.html">From humber.ca</q>
+    </section>
+    <section class="login">
+        <h2>Login to your account</h2>
+        <form action="view-performance.html" method="post">
+            <div>
+                <label>Email</label>
+                <input type="text" name="email" id="" placeholder="Email" required>
+            </div>
+            <div>
+                <label>Password</label>
+                <input type="password" name="password" id="" placeholder="Password" required>
+            </div>
+            <input type="submit" value="login">
+        </form>
+    </section>
+</body>
+
+</html>

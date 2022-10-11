@@ -1,0 +1,21 @@
+* {
+    margin : 0;
+    padding : 0;
+}
+
+li{
+    margin-left: 20px; 
+}
+
+.title-img{
+    max-width: 500px;
+    margin:  20px;
+}
+
+.about-title, p {
+    margin: 20px;
+}
+
+.img-row{
+    text-align: center;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View performance</title>
+</head>
+<!-- 
+    ● A​ ​ logo​ ​ which​ ​ links​ ​ to​ ​ the​ ​ index.html​ ​ page
+    ● A​ ​ functioning​ ​ navigation​ ​ system,​ ​ 3​ ​ links​ ​ to​ ​ the​ ​ working​ ​ pages​ ​ and​ ​ 2​ ​ more​ ​ additional​ ​ linksthat​ ​ aren’t​ ​ active -->
+<!-- view-performance.html​​ ​ –​ ​ on​ ​ this​ ​ page​ ​ students​ ​ can​ ​ view​ ​ the​ ​ marks​ ​ for​ ​ all​ ​ their assignments​ ​ in​ ​ each​ ​ of​ ​ their​ ​ courses,​ ​ 
+    see​ ​ what​ ​ their​ ​ overall​ ​ average​ ​ mark​ ​ is​ ​ in​ ​ each class​ ​ and​ ​ see​ ​ what​ ​ their​ ​ overall​ ​ average​ ​ is​ ​ in​ ​ the​ ​ program
+    ● Minimum​ ​ 2​ ​ block​ ​ level​ ​ elements
+    ● Minimum​ ​ 2​ ​ inline​ ​ level​ ​ elements
+    ● Minimum​ ​ appropriate​ ​ table​ ​ elements​ ​ and​ ​ layout
+    ● Assume​ ​ that​ ​ each​ ​ student​ ​ takes​ ​ 3​ ​ courses​ ​ (course​ ​ 1​ ​ has​ ​ 1​ ​ assignment​ ​ that​ ​ ismarked,​ ​ 
+    course​ ​ 2​ ​ has​ ​ 3​ ​ assignments​ ​ that​ ​ are​ ​ marked​ ​ and​ ​ course​ ​ 3​ ​ has​ ​ 2assignments​ ​ that​ ​ are​ ​ marked) -->
+
+<body>
+
+    <a href="index.html"><img src="assets/images/CJLogo.jpg" alt="" width="64"></a>
+    <h1>CJ College</h1>
+    <nav>
+        <ul>
+            <!-- The bullet points was hidden because the margin was set to 0 in the style.css file for every elements including li and ul tags. -->
+            <!-- I have change the right margin to 20 px so the could be shown -->
+            <li><a href="index.html">Home</a></li>
+            <!-- Adding an a tag with its href attribut gives the link style (underscore + blue color)-->
+            <li><a href="create-profile.html">Create profile</a></li>
+            <li><a href="view-performance.html">View performance</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="marks">
+        <table cellpadding="10" cellspacing="0" width="100%" border="1" style="text-align: center;">
+            <tr>
+                <th>Course</th>
+                <th>Assignement</th>
+                <th>Mark</th>
+                <th>Average</th>
+                <th>Overall Average</th>
+            </tr>
+            <tr>
+                <td>Web design</td>
+                <td>Student portal - no CSS</td>
+                <td>15</td>
+                <td>15</td>
+                <td rowspan="6">14.5</td>
+                
+            </tr>
+            <tr>
+                <td rowspan="3">Frontend Study</td>
+                <td>HTML</td>
+                <td>13</td>
+                <td rowspan="3">14</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Javascript</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Backend Study</td>
+                <td>Typescript</td>
+                <td>17</td>
+                <td rowspan="2">14.5</td>
+            </tr>
+            <tr>
+                <td>NodeJS</td>
+                <td>12</td>
+            </tr>
+        </table>
+    </section>
+</body>
+
+</html>

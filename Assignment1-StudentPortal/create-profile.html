@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create profile</title>
+</head>
+
+<body>
+    <a href="index.html"><img src="assets/images/CJLogo.jpg" alt="" width="64"></a>
+    <h1>CJ College</h1>
+    <nav>
+        <ul>
+            <!-- The bullet points was hidden because the margin was set to 0 in the style.css file for every elements including li and ul tags. -->
+            <!-- I have change the right margin to 20 px so the could be shown -->
+            <li><a href="index.html">Home</a></li>
+            <!-- Adding an a tag with its href attribut gives the link style (underscore + blue color)-->
+            <li><a href="create-profile.html">Create profile</a></li>
+            <li><a href="view-performance.html">View performance</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- 
+    ● A​ ​ logo​ ​ which​ ​ links​ ​ to​ ​ the​ ​ index.html​ ​ page
+    ● A​ ​ functioning​ ​ navigation​ ​ system,​ ​ 3​ ​ links​ ​ to​ ​ the​ ​ working​ ​ pages​ ​ and​ ​ 2​ ​ more​ ​ additional​ ​ linksthat​ ​ aren’t​ ​ active -->
+    <!-- create-profile.html​​ ​ –​ ​ on​ ​ this​ ​ page​ ​ students​ ​ will​ ​ be​ ​ able​ ​ to​ ​ create​ ​ their​ ​ own​ ​ profile.​ ​ ​ ​ 
+    A brief​ ​ description​ ​ of​ ​ the​ ​ page​ ​ and​ ​ also​ ​ instructions​ ​ for​ ​ the​ ​ profile​ ​ are​ ​ necessary.​ ​ 
+    Students should​ ​ be​ ​ able​ ​ to​ ​ include​ ​ their​ ​ name,​ ​ email​ ​ address,​ ​ which​ ​ year​ ​ they​ ​ are​ ​ in​ ​ (Year​ ​ 1, Year​ ​ 2,​ ​ Year​ ​ 3),​ ​ 
+    whether​ ​ they​ ​ prefer​ ​ MAC​ ​ or​ ​ PC,​ ​ and​ ​ a​ ​ brief​ ​ description​ ​ about themselves.
+    ● Minimum​ ​ 2​ ​ block​ ​ level​ ​ elements
+    ● Minimum​ ​ 2​ ​ inline​ ​ level​ ​ elements
+    ● Minimum​ ​ 1​ ​ images
+    ● Appropriate​ ​ amount​ ​ of​ ​ form​ ​ elements
+    ● Appropriate​ ​ amount​ ​ of​ ​ text​ ​ content -->
+    <h1>Student Contact Form</h1>
+    <!--Photo by Salah Alawadhi: https://www.pexels.com/photo/compound-lighted-with-string-lights-382297/-->
+    <img src="assets/images/pic4.jpg" alt="" width="500">
+    <section class="description">
+        <p>Please note that you will need the following information to create your own account.</p>
+        <ul>
+            <li>Name</li>
+            <li>Email address</li>
+            <li>Year</li>
+            <li>PC/Mac preference</li>
+            <li>Brief description of yourself</li>
+            
+        </ul>
+    </section>
+    <section class="form">
+        <h2>Enter your information</h2>
+        <form action="https://httpbin.org/post" method="post">
+            <div>
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Enter your name" autocomplete>
+            </div>
+            <div>
+                <label>Email</label>
+                <input name="email" type="email" placeholder="Enter your email address" autocomplete>
+            </div>
+            <div>
+                <label for="year">Year</label>
+                <select id="year" name="year">
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                </select>
+            </div>
+            <div>
+                <label for="pc-arch">Computer preference</label>
+                <select name="pc-arch" id="pc-arch">
+                    <option value="PC">PC</option>
+                    <option value="Mac">Mac</option>
+                </select>
+            </div>
+            <div>
+                <label>Self description:</label><br>
+                <textarea name="description" rows="4" cols="50" placeholder="What would you like others to know about you?"></textarea>
+            </div>   
+            <div>  
+                <Input type="checkbox" name="agree" required></Input> 
+                <label>I agree to the terms and conditions</label>
+            </div>
+            <div>
+                <input type="submit" value="login">
+            </div>    
+        </form>
+    </section>
+</body>
+
+</html>
